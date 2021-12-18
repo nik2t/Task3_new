@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class RecipeList {
+public class RecipeList  {
 
     protected ArrayList<Recipe> recipes = new ArrayList<Recipe>();
 

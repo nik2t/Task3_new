@@ -3,6 +3,10 @@ package com.company;
 
 
 import com.company.development2.AdvancedUser;
+import com.company.development3.Appliances;
+import com.company.development3.NewRecipe;
+import com.company.development3.NewRecipeList;
+import com.company.development3.ThirdAssistent;
 import com.company.resources.Const;
 import com.development7.NewAssistent;
 
@@ -17,6 +21,7 @@ public class Main {
         RecipeList list = new RecipeList();
         AvailableProducts aproduct = new AvailableProducts();
         MissingProducts mproduct = new MissingProducts();
+        Appliances appendable = new Appliances();
         User user = new AdvancedUser(aproduct, mproduct);
 
         System.out.println("Введите тип приема пищи:");
@@ -66,6 +71,26 @@ public class Main {
         conductor.demonstration();
         user.print();
 
+        /*NewRecipeList newlist = new NewRecipeList();
+        ThirdAssistent new_assistant = new ThirdAssistent(list, user, newlist, appendable);
+
+        System.out.println("Введите тип приема пищи:");
+        type = scanner.nextLine();
+        type = "Завтрак";
+        System.out.println("Введите обязательный продукт:");
+        product = scanner.nextLine();
+        product = "Яйца крупные";
+        ArrayList<NewRecipe> new_answer = new_assistant.new_pick_up(type, product);
+        counter = 0;
+        for(Recipe ans: new_answer){
+            counter++;
+            System.out.println("Рецепт №" + counter);
+            ans.print();
+        }
+        System.out.println("Выберите рецепт(укажите №):");
+        choice = scanner.nextInt();
+        choice--;
+        user.setLast_recipe(answer.get(choice));*/
     }
 
 }
