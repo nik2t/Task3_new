@@ -2,6 +2,7 @@ package com.company;
 
 
 
+import com.company.development2.AdvancedUser;
 import com.company.resources.Const;
 import com.development7.NewAssistent;
 
@@ -16,7 +17,7 @@ public class Main {
         RecipeList list = new RecipeList();
         AvailableProducts aproduct = new AvailableProducts();
         MissingProducts mproduct = new MissingProducts();
-        User user = new User(aproduct, mproduct);
+        User user = new AdvancedUser(aproduct, mproduct);
 
         System.out.println("Введите тип приема пищи:");
         Scanner scanner = new Scanner(System.in);
